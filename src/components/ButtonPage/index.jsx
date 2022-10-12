@@ -5,16 +5,22 @@ function ButtonPage({ setPage, data }) {
     function nextPage() {
       if (data.info.next !== null) {
         setPage(data.info.next);
+        const body = document.querySelector("#root");
+        body?.scrollIntoView({
+          behavior: "smooth",
+        });
       }
     }
 
     function prevPage() {
       if (data.info.prev !== null) {
         setPage(data.info.prev);
+        const body = document.querySelector("#root");
+        body?.scrollIntoView({
+          behavior: "smooth",
+        });
       }
     }
-
-    console.log(data.info.prev);
 
     if (data.info.prev === null) {
       return (
@@ -23,6 +29,7 @@ function ButtonPage({ setPage, data }) {
         </Container>
       );
     }
+
     if (data.info.prev !== null) {
       return (
         <Container>
@@ -31,6 +38,7 @@ function ButtonPage({ setPage, data }) {
         </Container>
       );
     }
+
     if (data.prev.netx === null) {
       return (
         <Container>
