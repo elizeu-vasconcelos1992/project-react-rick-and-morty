@@ -24,7 +24,6 @@
 <li>CCS</li>
 <li>REACT</li>
 <li>CONSUMO DE API</li>
-<li>AXIOS</li>
 <li>STYLED-COMPONENTS</li>
 </ul><br>
 
